@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Heart</title>
+</head>
+<style>
+body{
+	background: #000;
+}
+.heart{
+	width:100px;
+	height:50px;
+	background:red;
+	position:absolute;
+	left:100px;
+	top:100px;
+	transition:1s;
+	transform-origin:right bottom;
+}
+.heart::before{
+	content:"";
+	width:100%;
+	height:100%;
+	background:red;
+	position:absolute;
+	transition:2s;
+	transform-origin:right bottom;
+}
+
+.heart:hover{
+	border-top-left-radius:30%;
+	border-bottom-left-radius:30%;
+	transform: rotate(45deg);
+}
+
+.heart:hover::before{
+	border-top-left-radius:30%;
+	border-bottom-left-radius:30%;
+	transform: rotate(450deg) translateY(50px);
+}
+
+</style>
+<body>
+	<div class="heart"></span>
+</body>
+
+</html>
