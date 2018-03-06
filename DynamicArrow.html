@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Heart</title>
+</head>
+<style>
+body{
+
+}
+.arrow{
+	width:0px;
+	height:35px;
+	background: linear-gradient(to right, #4c315a, #9265aa);
+	animation: arrow 0.3s linear;
+	animation-fill-mode:forwards;	
+	position:absolute;
+}
+.arrow::after{
+	content:"";
+	width:0px;
+	height:35px;
+	left:100px;
+	transform: rotate(45deg);
+	background:linear-gradient(45deg, #825998, #b07dc8);
+	position:absolute;
+	transform-origin:left top;
+	animation: arrow2 0.1s 0.3s linear;
+	animation-fill-mode:forwards;	
+	 border-top-left-radius: 5%;
+	 border-bottom-right-radius: 5%;
+	
+	
+}
+
+@keyframes arrow{
+	0%{width:0px;}
+	100%{width:100px; border-top-right-radius: 5%;}
+}
+@keyframes arrow2{
+	0%{width:0px; opacity:0 }
+	30%{opacity:1 }
+	100%{width:80px}
+}
+@keyframes arrow3{
+	0%{width:0px; opacity:0 }
+	30%{opacity:1 }
+	100%{width:75px}
+}
+@keyframes arrow4{
+	0%{width:0px;  opacity:0;}
+	30%{opacity:1 }
+	100%{width:40px; }
+}
+@keyframes arrow5{
+	0%{width:0px;  opacity:0;}
+	5%{opacity:1 }
+	100%{width:400px; }
+}
+@keyframes arrow6{
+	0%{
+	opacity:0;
+	}
+	
+	100%{
+	opacity:1;
+}
+}
+
+.arrow2{
+	width:0px;
+	height:35px;
+	left:131px;
+	top:33px;
+	transform: rotate(-45deg);
+	background:linear-gradient(to right, #a87abd, #cf9aea);
+	transform-origin:left top;
+	position:absolute;
+	border-bottom-left-radius: 10%;
+	border-top-right-radius: 10%;
+	animation: arrow3 0.1s 0.4s linear;
+	animation-fill-mode:forwards;	
+	
+}
+.arrow2::after{
+	content:"";
+	width:0px;
+	height:35px;
+	top:32px;
+	left:75px;
+	transform: rotate(87deg);
+	background:linear-gradient(to right, #c591df, #d69ff2);
+	position:absolute;
+	transform-origin:left top;
+	border-top-left-radius: 10%;
+	border-bottom-right-radius: 10%;
+	animation: arrow4 0.1s 0.5s linear;
+	animation-fill-mode:forwards;	
+
+}
+.arrow3{
+	width:0px;
+	height:35px;
+	left:206px;
+	top:12px;
+	transform: rotate(-52deg);
+	background:linear-gradient(to right, #cb96e6, #f2dbfb);
+	transform-origin:left top;
+	position:absolute;
+	animation: arrow5 0.4s 0.6s linear;
+	animation-fill-mode:forwards;	
+}
+.arrow3::after{
+	content:"";
+	height:0;
+	position:absolute;	
+	border-bottom: 0px solid #f2dbfb;
+	border-left: 0px solid transparent;
+	border-right: 0px solid transparent;
+	left:399px;
+	transform: rotate(90deg);
+	transform-origin:left bottom;
+	top:-193px;	
+	border-top:0;	
+	opacity:0;
+	border-bottom-width:148px; border-left-width:66px;
+	border-right-width:66px;
+	animation: arrow6 0.1s 1s linear;
+	animation-fill-mode:forwards;	
+
+
+}
+
+
+
+
+</style>
+<body>
+	<div style="top:500px;position:absolute;">
+	<div class="arrow"></div>
+	<div class="arrow2"></div>
+	<div class="arrow3"></div>
+	<div class="arrow4"></div>
+	</div>
+</body>
+
+</html>
