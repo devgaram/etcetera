@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dynamic Light</title>
+</head>
+<style>
+.outer{
+	width:1200px;
+	position:relative;
+	margin:0 auto;
+	text-align:center;
+}
+.inner{
+	top:0; left:0; z-index:10; opacity:1; position:absolute;
+
+}
+.eventTop{
+	background:url(http://www.ybmclass.com/images/event/event_180305/img_01_bg.jpg) no-repeat top center;
+}
+.arrow{
+	animation:arrow 1.5s ease-in infinite;
+	position:absolute;left:179px; top:418px;width:500px; height:500px;
+}
+
+@keyframes arrow{
+	0%{left:179px; top:418px;}
+	50%{left:657px; top:418px;}
+	100%{left:657px; top:-289px;}
+}
+</style>
+<body>
+		<div class="eventTop">	
+			<div class="outer">			
+				<img src="http://www.ybmclass.com/images/event/event_180305/img_01.jpg" style="margin:0 -411px;"/>
+				<div class="inner">				
+					<img src="http://www.ybmclass.com/images/event/event_180305/light.png" class="arrow"/>
+					<img src="http://www.ybmclass.com/images/event/event_180305/img_01_1.png" style="position:relative;"/>
+				</div>
+			</div>		
+		</div>
+</body>
+</html>
